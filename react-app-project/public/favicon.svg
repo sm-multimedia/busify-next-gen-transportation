@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <!-- Background Gradient (Busify Blue) -->
+    <linearGradient id="busify-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="60%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+
+    <!-- Top Gloss Effect -->
+    <linearGradient id="busify-gloss" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.32" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Subtle drop shadow for depth -->
+    <filter id="bus-glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1.5" flood-color="#0f172a" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Squircle Base matching Busify brand icon -->
+  <rect x="2" y="2" width="60" height="60" rx="15" fill="url(#busify-gradient)" />
+  <rect x="2" y="2" width="60" height="30" rx="15" fill="url(#busify-gloss)" />
+  <rect x="2.75" y="2.75" width="58.5" height="58.5" rx="14.25" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-width="1.5" />
+
+  <!-- Bus Symbol (matching Busify header icon) -->
+  <g filter="url(#bus-glow)">
+    <g transform="translate(5.6, 2) scale(2.2)" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <!-- Windshield glass tint -->
+      <polygon points="5.55,8 18.45,8 20.24,9.4 21.78,12 2.22,12 3.76,9.4" fill="#ffffff" fill-opacity="0.2" stroke="none" />
+      
+      <!-- Windshield Dividers / Wipers -->
+      <path d="M8 6v6" />
+      <path d="M16 6v6" />
+      
+      <!-- Beltline divider -->
+      <path d="M2 12h20" />
+      
+      <!-- Bus Chassis / Outer Frame -->
+      <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a2 2 0 0 0-.22-.91L20.24 9.4A2 2 0 0 0 18.45 8H5.55a2 2 0 0 0-1.79 1.4L2.22 12.44a2 2 0 0 0-.22.91V17a1 1 0 0 0 1 1h2" />
+      
+      <!-- Front Headlights (Amber / Gold Accent) -->
+      <circle cx="5" cy="14.8" r="0.95" fill="#facc15" stroke="none" />
+      <circle cx="19" cy="14.8" r="0.95" fill="#facc15" stroke="none" />
+      
+      <!-- Front Grille Line -->
+      <line x1="8.5" y1="14.8" x2="15.5" y2="14.8" stroke="#ffffff" stroke-width="1.2" stroke-opacity="0.75" />
+
+      <!-- Wheels & Hubcaps -->
+      <circle cx="7" cy="18" r="2.1" fill="#ffffff" />
+      <circle cx="7" cy="18" r="0.85" fill="#1e40af" stroke="none" />
+      <path d="M9.1 18h5.8" />
+      <circle cx="17" cy="18" r="2.1" fill="#ffffff" />
+      <circle cx="17" cy="18" r="0.85" fill="#1e40af" stroke="none" />
+    </g>
+  </g>
+</svg>
